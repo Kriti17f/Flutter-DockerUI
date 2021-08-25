@@ -11,8 +11,7 @@ class _DockerpageState extends State<Dockerpage> {
   String? output;
   action() async {
     print(command);
-    var url = Uri.http("192.168.99.102", "/cgi-bin/sample.py",{"cmd": command});
-    //var url = Uri.parse('http://192.168.99.102/cgi-bin/sample.py?cmd=$command');
+    var url = Uri.http("192.168.--.---", "/cgi-bin/sample.py",{"cmd": command});
     var r1 = await http.get(url);
     print(r1.body);
     print(r1.statusCode);
